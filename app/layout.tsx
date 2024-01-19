@@ -1,4 +1,4 @@
-import { Nav } from "@/components";
+import { Container, Nav } from "@/components";
 import { Footer } from "@/components/Footer/Footer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,7 +18,9 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
     <body className={inter.className}>
       <Providers>
         <Nav />
-        {children}
+        <Container>
+          <main>{children}</main>
+        </Container>
         <Footer />
       </Providers>
     </body>
