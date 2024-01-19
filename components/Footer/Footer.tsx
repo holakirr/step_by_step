@@ -1,10 +1,9 @@
 import { Container, Divider, Logotype, NavItemsList } from "@/components";
 import Link from "next/link";
-import {} from "../Divider";
 
 const Footer = () => (
   <Container>
-    <footer className="bg-white rounded-lg shadow dark:bg-gray-900">
+    <footer className="bg-white rounded-t-lg shadow dark:bg-gray-900">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="flex flex-col sm:flex-row items-center sm:gap-0 gap-4 sm:justify-between">
           <Logotype />
