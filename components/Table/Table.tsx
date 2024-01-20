@@ -1,3 +1,4 @@
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -5,9 +6,9 @@ type TableProps = {
   data: any[];
 };
 
-const Table: FC<TableProps> = ({ data }) => {
+export const Table: FC<TableProps> = ({ data }) => {
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div className="relative overflow-x-auto shadow-md sm:rounded-lg py-4 bg-white px-4">
       <div className="flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
         <div>
           <button
@@ -18,21 +19,7 @@ const Table: FC<TableProps> = ({ data }) => {
           >
             <span className="sr-only">Action button</span>
             Action
-            <svg
-              className="w-2.5 h-2.5 ms-2.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
+            <ChevronDownIcon width={20} height={20} className="ml-2" />
           </button>
           <div
             id="dropdownAction"
@@ -91,9 +78,9 @@ const Table: FC<TableProps> = ({ data }) => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
               />
             </svg>
@@ -155,7 +142,9 @@ const Table: FC<TableProps> = ({ data }) => {
             >
               <Image
                 className="w-10 h-10 rounded-full"
-                src="/docs/images/people/profile-picture-1.jpg"
+                src="https://picsum.photos/id/684/40/40"
+                width={40}
+                height={40}
                 alt="Jese image"
               />
               <div className="ps-3">
@@ -200,7 +189,9 @@ const Table: FC<TableProps> = ({ data }) => {
             >
               <Image
                 className="w-10 h-10 rounded-full"
-                src="/docs/images/people/profile-picture-3.jpg"
+                src="https://picsum.photos/id/684/40/40"
+                width={40}
+                height={40}
                 alt="Jese image"
               />
               <div className="ps-3">
@@ -245,7 +236,9 @@ const Table: FC<TableProps> = ({ data }) => {
             >
               <Image
                 className="w-10 h-10 rounded-full"
-                src="/docs/images/people/profile-picture-2.jpg"
+                src="https://picsum.photos/id/684/40/40"
+                width={40}
+                height={40}
                 alt="Jese image"
               />
               <div className="ps-3">
@@ -290,7 +283,9 @@ const Table: FC<TableProps> = ({ data }) => {
             >
               <Image
                 className="w-10 h-10 rounded-full"
-                src="/docs/images/people/profile-picture-5.jpg"
+                src="https://picsum.photos/id/684/40/40"
+                width={40}
+                height={40}
                 alt="Jese image"
               />
               <div className="ps-3">
@@ -335,7 +330,9 @@ const Table: FC<TableProps> = ({ data }) => {
             >
               <Image
                 className="w-10 h-10 rounded-full"
-                src="/docs/images/people/profile-picture-4.jpg"
+                src="https://picsum.photos/id/684/40/40"
+                width={40}
+                height={40}
                 alt="Jese image"
               />
               <div className="ps-3">
@@ -366,5 +363,3 @@ const Table: FC<TableProps> = ({ data }) => {
     </div>
   );
 };
-
-export { Table };

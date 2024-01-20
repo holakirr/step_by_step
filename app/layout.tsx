@@ -1,5 +1,6 @@
-import { Container, Nav } from "@/components";
+import { Container, Nav, Notifications } from "@/components";
 import { Footer } from "@/components/Footer/Footer";
+import { notificationsMock } from "@/const";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
@@ -22,6 +23,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
           <main>{children}</main>
         </Container>
         <Footer />
+        <Notifications data={notificationsMock} />
       </Providers>
     </body>
   </html>

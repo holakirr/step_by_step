@@ -1,0 +1,14 @@
+.notifications {
+  &:hover {
+    & [role="notification"] {
+      margin-bottom: 0;
+    }
+  }
+  & [role="notification"] {
+    transition: all 0.1s ease;
+    margin-bottom: -30%;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
