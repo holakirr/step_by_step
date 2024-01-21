@@ -1,18 +1,17 @@
 "use client";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { HTMLAttributes } from "react";
 import { Button } from "..";
 
 export type NotificationType = {
-  id: number;
+  id: string;
   type: string;
   title: string;
   message: string;
   time: string;
 };
 
-type NotificationsProps = NotificationType & {
-  index: number;
-};
+type NotificationsProps = HTMLAttributes<HTMLDivElement> & NotificationType;
 
 export const Notification = ({
   id,
@@ -20,11 +19,12 @@ export const Notification = ({
   title,
   message,
   time,
-  index,
+  style,
 }: NotificationsProps) => {
   return (
     <div
-      className={`z-10 bg-white p-4 w-80 flex justify-between items-start shadow-md rounded-lg`}
+      className={`z-10 bg-white p-4 w-80 flex justify-between items-start shadow-[0px_0px_15px_1px_rgb(0,0,0,0.3)] rounded-lg`}
+      style={style}
       role="notification"
     >
       <div className="relative">
