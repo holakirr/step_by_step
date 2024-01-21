@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
 import Providers from "./providers";
+import { Content } from "@/components/Content/Content";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,9 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
     <body className={inter.className}>
       <Providers>
         <Nav />
-        <Container>
-          <main>{children}</main>
-        </Container>
+        <main className="my-6">
+          <Content>{children}</Content>
+        </main>
         <Footer />
         <Notifications data={notificationsMock} />
       </Providers>

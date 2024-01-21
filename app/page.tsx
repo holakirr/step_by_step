@@ -14,11 +14,5 @@ const data = [
 ];
 
 export default function Home() {
-  return (
-    <main className="py-6">
-      <Container>
-        <Table data={data} />
-      </Container>
-    </main>
-  );
+  return <Table data={data} />;
 }

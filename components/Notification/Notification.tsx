@@ -4,7 +4,6 @@ import { Button } from "..";
 
 export type NotificationType = {
   id: number;
-  index: number;
   type: string;
   title: string;
   message: string;
@@ -25,7 +24,7 @@ export const Notification = ({
 }: NotificationsProps) => {
   return (
     <div
-      className={`z-10 bg-white p-4 w-80 flex justify-between items-start shadow-md rounded-lg border-4 border-gray-50 border-solid`}
+      className={`z-10 bg-white p-4 w-80 flex justify-between items-start shadow-md rounded-lg`}
       role="notification"
     >
       <div className="relative">

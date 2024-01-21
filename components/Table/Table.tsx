@@ -8,7 +8,7 @@ type TableProps = {
 
 export const Table: FC<TableProps> = ({ data }) => {
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg py-4 bg-white px-4">
+    <div className="relative overflow-x-auto py-4 bg-white px-4">
       <div className="flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
         <div>
           <button

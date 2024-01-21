@@ -15,7 +15,7 @@ export const Nav = () => {
     <>
       <Container>
         <nav
-          className="bg-white dark:bg-gray-900 flex items-center justify-between p-6 lg:px-8 rounded-b-lg"
+          className="bg-white dark:bg-gray-900 flex items-center justify-between p-6 lg:px-8 rounded-b-lg shadow-lg"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
