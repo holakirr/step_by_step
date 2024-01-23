@@ -23,7 +23,7 @@ export const Notification = ({
 }: NotificationsProps) => {
   return (
     <div
-      className={`z-10 bg-white p-4 w-80 flex justify-between items-start shadow-[0px_0px_15px_1px_rgb(0,0,0,0.3)] rounded-lg`}
+      className={`z-10 bg-white dark:bg-slate-700 p-4 w-80 flex justify-between items-start shadow-[0px_0px_15px_1px_rgb(0,0,0,0.3)] rounded-lg`}
       style={style}
       role="notification"
     >

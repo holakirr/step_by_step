@@ -12,33 +12,31 @@ export const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <>
-      <Container>
-        <nav
-          className="bg-white dark:bg-gray-900 flex items-center justify-between p-6 lg:px-8 rounded-b-lg shadow-lg"
-          aria-label="Global"
-        >
-          <div className="flex lg:flex-1">
-            <Logotype />
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            <NavItemsList />
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center justify-end gap-x-4">
-            <AuthModule />
-          </div>
-        </nav>
-      </Container>
+    <Container>
+      <nav
+        className="bg-white dark:bg-gray-900 flex items-center justify-between p-4 md:px-8 rounded-b-lg shadow-lg"
+        aria-label="Global"
+      >
+        <div className="flex lg:flex-1">
+          <Logotype />
+        </div>
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+          </button>
+        </div>
+        <div className="hidden lg:flex lg:gap-x-12">
+          <NavItemsList />
+        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center justify-end gap-x-4">
+          <AuthModule />
+        </div>
+      </nav>
       <Dialog
         as="div"
         className="lg:hidden"
@@ -70,6 +68,6 @@ export const Nav = () => {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </>
+    </Container>
   );
 };
