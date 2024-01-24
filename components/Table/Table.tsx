@@ -1,17 +1,40 @@
+"use client";
+
 import Image from "next/image";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { ListBox, SearchBox } from "..";
 
 type TableProps = {
   data: any[];
 };
 
+const people = [
+  {
+    name: "Wade Cooper",
+    id: "Wade Cooper",
+  },
+  {
+    name: "Arlene Mccoy",
+    id: "Arlene Mccoy",
+  },
+  {
+    name: "Devon Webb",
+    id: "Devon Webb",
+  },
+];
+
 export const Table: FC<TableProps> = ({ data }) => {
+  const [selected, setSelected] = useState(people[0]);
   return (
     <div className="relative">
       <div className="flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
         <div>
-          <ListBox />
+          <ListBox
+            items={people}
+            selected={selected}
+            setSelected={setSelected}
+            multiple={false}
+          />
         </div>
         <SearchBox id="table" className="w-64" placeholder="users" />
       </div>
