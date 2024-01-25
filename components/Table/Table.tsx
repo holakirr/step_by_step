@@ -28,14 +28,12 @@ export const Table: FC<TableProps> = ({ data }) => {
   return (
     <div className="relative">
       <div className="flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
-        <div>
-          <ListBox
-            items={people}
-            selected={selected}
-            setSelected={setSelected}
-            multiple={false}
-          />
-        </div>
+        <ListBox
+          items={people}
+          selected={selected}
+          setSelected={setSelected}
+          multiple={false}
+        />
         <SearchBox id="table" className="w-64" placeholder="users" />
       </div>
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 overflow-x-visible max-w-full">

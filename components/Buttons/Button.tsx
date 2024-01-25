@@ -1,6 +1,7 @@
+import { ButtonHTMLAttributes } from "react";
+
 type ButtonVariant = keyof typeof buttonVariantClasses;
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  children: React.ReactNode;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
 };
 
