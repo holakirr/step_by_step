@@ -1,4 +1,4 @@
-import { NotificationType } from "@/components/Notification/Notification";
+import { NotificationType } from "@/components/Notifications/Notification/Notification";
 
 export const navItems = [
   {

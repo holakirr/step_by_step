@@ -1,4 +1,4 @@
-import { navItems } from "@/const";
+import { navItems } from "../../const";
 import { NavItem } from "./NavItem";
 
 export const NavItemsList = () =>

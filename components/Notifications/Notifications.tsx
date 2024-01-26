@@ -1,5 +1,5 @@
 import { Notification } from "..";
-import { NotificationType } from "../Notification/Notification";
+import { NotificationType } from "./Notification/Notification";
 import styles from "./Notifications.module.sass";
 
 type NotificationsProps = {

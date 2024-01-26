@@ -1,5 +1,5 @@
-import { Container, Divider, Logotype, NavItemsList } from "@/components";
 import Link from "next/link";
+import { Container, Divider, Logotype, NavItemsList } from "../";
 
 const Footer = () => (
   <Container>

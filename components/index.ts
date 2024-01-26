@@ -1,10 +1,10 @@
 export { Button } from "./Buttons";
 export { Container } from "./Container";
+export { Content } from "./Content";
 export { Divider } from "./Divider";
 export { Footer } from "./Footer";
 export { Input, ListBox, SearchBox } from "./Inputs";
 export { Logotype } from "./Logotype";
 export { Nav, NavItemsList } from "./Nav";
-export { Notification } from "./Notification";
-export { Notifications } from "./Notifications";
+export { Notification, Notifications } from "./Notifications";
 export { Table } from "./Table";

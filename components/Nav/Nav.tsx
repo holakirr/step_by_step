@@ -1,10 +1,9 @@
 "use client";
 
-import { Container } from "@/components";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { Logotype } from "../Logotype/Logotype";
+import { Container, Logotype } from "../";
 import { AuthModule } from "./AuthModule";
 import { NavItemsList } from "./NavItemsList";
 

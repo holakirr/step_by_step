@@ -5,7 +5,7 @@ import { FC, useState } from "react";
 import { ListBox, SearchBox } from "..";
 
 type TableProps = {
-  data: any[];
+  data?: any[];
 };
 
 const people = [

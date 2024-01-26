@@ -1,4 +1,4 @@
-import { Container, Table } from "@/components";
+import { Table } from "@/components";
 
 const data = [
   {
