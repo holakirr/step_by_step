@@ -1,12 +1,14 @@
-import { Container, Nav, Notifications } from "@/components";
+import { Nav, Notifications } from "@/components";
+import { Content } from "@/components/Content/Content";
 import { Footer } from "@/components/Footer/Footer";
 import { notificationsMock } from "@/const";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
 import Providers from "./providers";
-import { Content } from "@/components/Content/Content";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +28,8 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
         <Footer />
         <Notifications data={notificationsMock} />
       </Providers>
+      <Analytics />
+      <SpeedInsights />
     </body>
   </html>
 );
