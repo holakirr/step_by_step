@@ -21,7 +21,7 @@ export const Notification = ({
 }: NotificationsProps) => {
   return (
     <div
-      className={`z-10 p-4 w-80 flex justify-between items-start shadow-[0px_0px_15px_1px_rgb(0,0,0,0.3)] rounded-lg backdrop:blur-xl relative bg-white/80`}
+      className={`z-10 p-4 w-80 flex justify-between items-start shadow-xl rounded-lg backdrop:blur-xl relative bg-white/90`}
       role="notification"
     >
       <div className="">
@@ -29,7 +29,7 @@ export const Notification = ({
         <p className="">{message}</p>
         <p className="text-sm">{time}</p>
       </div>
-      <Button variant="shadow">
+      <Button variant="shadow" squared>
         <XMarkIcon className="w-5 h-5" />
       </Button>
     </div>

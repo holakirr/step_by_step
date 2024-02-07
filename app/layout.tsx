@@ -1,6 +1,4 @@
-import { Nav, Notifications } from "@/components";
-import { Content } from "@/components/Content/Content";
-import { Footer } from "@/components/Footer/Footer";
+import { Container, Footer, Nav, Notifications } from "@/components";
 import { notificationsMock } from "@/const";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -18,18 +16,16 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
-  <html lang="en">
-    <body
-      className={
-        "min-h-screen flex flex-col justify-between " + inter.className
-      }
-    >
+  <html lang="en" className="bg-white">
+    <body className={inter.className}>
       <Providers>
-        <Nav />
-        <main className="my-6">
-          <Content>{children}</Content>
-        </main>
-        <Footer />
+        <div className="min-h-screen flex flex-col py-2">
+          <Nav />
+          <main className="my-6">
+            <Container>{children}</Container>
+          </main>
+          <Footer />
+        </div>
         <Notifications data={notificationsMock} />
       </Providers>
       <Analytics />

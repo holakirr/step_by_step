@@ -1,6 +1,5 @@
 export { Button } from "./Buttons";
 export { Container } from "./Container";
-export { Content } from "./Content";
 export { Divider } from "./Divider";
 export { Footer } from "./Footer";
 export { Input, ListBox, SearchBox } from "./Inputs";

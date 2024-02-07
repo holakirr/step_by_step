@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Container, Divider, Logotype, NavItemsList } from "../";
 
 const Footer = () => (
-  <Container>
-    <footer className="rounded-t-lg shadow-[0_-2px_20px_-15px_black] p-4 md:px-8">
+  <Container className="mt-auto">
+    <footer className="p-4 md:px-8">
       <div className="flex flex-col sm:flex-row items-center sm:gap-0 gap-4 sm:justify-between">
         <Logotype />
         <div className="flex flex-col sm:flex-row flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 sm:gap-7 gap-2">

@@ -12,10 +12,7 @@ export const Nav = () => {
 
   return (
     <Container>
-      <nav
-        className="flex items-center justify-between p-4 md:px-8 rounded-b-lg shadow-lg"
-        aria-label="Global"
-      >
+      <nav className="flex items-center justify-between" aria-label="Global">
         <div className="flex lg:flex-1">
           <Logotype />
         </div>
