@@ -6,5 +6,12 @@ interface ContainerProps {
 }
 
 export const Container: FC<ContainerProps> = ({ children, className }) => (
-  <div className={"container mx-auto max-w-7xl " + className}>{children}</div>
+  <div
+    className={
+      "container mx-auto max-w-7xl backdrop:blur-xl relative bg-transparent " +
+      className
+    }
+  >
+    {children}
+  </div>
 );

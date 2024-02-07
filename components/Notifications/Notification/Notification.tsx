@@ -14,20 +14,17 @@ export type NotificationType = {
 type NotificationsProps = HTMLAttributes<HTMLDivElement> & NotificationType;
 
 export const Notification = ({
-  id,
   type,
   title,
   message,
   time,
-  style,
 }: NotificationsProps) => {
   return (
     <div
-      className={`z-10 bg-white dark:bg-slate-700 p-4 w-80 flex justify-between items-start shadow-[0px_0px_15px_1px_rgb(0,0,0,0.3)] rounded-lg`}
-      style={style}
+      className={`z-10 p-4 w-80 flex justify-between items-start shadow-[0px_0px_15px_1px_rgb(0,0,0,0.3)] rounded-lg backdrop:blur-xl relative bg-white/80`}
       role="notification"
     >
-      <div className="relative">
+      <div className="">
         <p className="font-bold">{title}</p>
         <p className="">{message}</p>
         <p className="text-sm">{time}</p>

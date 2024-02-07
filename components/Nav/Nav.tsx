@@ -13,7 +13,7 @@ export const Nav = () => {
   return (
     <Container>
       <nav
-        className="bg-white dark:bg-gray-900 flex items-center justify-between p-4 md:px-8 rounded-b-lg shadow-lg"
+        className="flex items-center justify-between p-4 md:px-8 rounded-b-lg shadow-lg"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">

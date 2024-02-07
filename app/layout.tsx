@@ -19,7 +19,11 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="en">
-    <body className={inter.className}>
+    <body
+      className={
+        "min-h-screen flex flex-col justify-between " + inter.className
+      }
+    >
       <Providers>
         <Nav />
         <main className="my-6">
