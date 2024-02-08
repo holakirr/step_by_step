@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container, Divider, Logotype, NavItemsList } from "../";
 
-const Footer = () => (
+export const Footer = () => (
   <Container className="mt-auto">
     <footer className="p-4 md:px-8">
       <div className="flex flex-col sm:flex-row items-center sm:gap-0 gap-4 sm:justify-between">
@@ -28,5 +28,3 @@ const Footer = () => (
     </footer>
   </Container>
 );
-
-export { Footer };

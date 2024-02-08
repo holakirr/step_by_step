@@ -1,5 +1,5 @@
 import { useSession } from "next-auth/react";
-import { Button } from "../Buttons/Button";
+import { Button } from "../";
 
 export const AuthModule = () => {
   const session = useSession();

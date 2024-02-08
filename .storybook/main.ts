@@ -8,6 +8,14 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
   ],
+  build: {
+    test: {
+      disabledAddons: [
+        '@storybook/addon-docs',
+        '@storybook/addon-essentials/docs',
+      ],
+    },
+  },
   framework: {
     name: "@storybook/nextjs",
     options: {},
@@ -15,5 +23,9 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  typescript: {
+    reactDocgen: "react-docgen",
+  }
 };
+
 export default config;

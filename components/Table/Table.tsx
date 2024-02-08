@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FC, useState } from "react";
-import { ListBox, SearchBox } from "..";
+import { ListBox, SearchBox } from "../";
 
 type TableProps = {
   data?: any[];

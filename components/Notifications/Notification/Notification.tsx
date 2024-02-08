@@ -1,7 +1,8 @@
 "use client";
+
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HTMLAttributes } from "react";
-import { Button } from "../..";
+import { Button } from "../../";
 
 export type NotificationType = {
   id: string;

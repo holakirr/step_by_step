@@ -17,6 +17,13 @@ const meta = {
   args: {
     children: "Divider",
   },
+  decorators: [
+    (Story: any) => (
+      <div style={{minWidth: '100vw'}}>
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof Divider>;
 
 export default meta;
