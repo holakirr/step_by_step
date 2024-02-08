@@ -25,7 +25,7 @@ const Button = ({
 }: ButtonProps) => (
   <button
     type="button"
-    className={`inline-flex items-center px-3 py-2 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-opacity-50 backdrop-blur-md rounded-3xl transition-colors shadow-md ${
+    className={`inline-flex items-center px-3 py-2 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-opacity-50 backdrop-blur-md rounded-3xl transition-colors shadow-md whitespace-nowrap ${
       buttonVariantClasses[variant]
     } ${className} ${squared ? "aspect-square" : ""}`}
     onClick={onClick}

@@ -14,7 +14,7 @@ export const ListBoxItem = ({ id, name }: ListBoxOption) => (
     className={({ active }) =>
       `relative cursor-default select-none py-2 pl-10 pr-4 ${
         active &&
-        "bg-amber-100 text-amber-900 dark:bg-amber-900 dark:text-amber-100"
+        "bg-amber-100/70 text-amber-900 dark:bg-amber-900/70 dark:text-amber-100"
       }`
     }
     value={{ id, name }}

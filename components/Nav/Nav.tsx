@@ -11,7 +11,7 @@ export const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <Container>
+    <Container className="lg:min-w-[700px]">
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="flex lg:flex-1">
           <Logotype />

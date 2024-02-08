@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { SessionProvider } from "next-auth/react";
 import { Nav } from ".";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
@@ -14,6 +15,7 @@ const meta = {
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {},
   args: {},
+  decorators: [(Story) => <SessionProvider>{Story()}</SessionProvider>],
 } satisfies Meta<typeof Nav>;
 
 export default meta;
