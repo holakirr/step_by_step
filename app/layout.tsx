@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
-  <html lang="en" className="bg-white">
-    <body className={inter.className}>
+  <html lang="en">
+    <body className={inter.className + " bg-white dark:bg-slate-700"}>
       <Providers>
         <div className="min-h-screen flex flex-col py-2">
           <Nav />

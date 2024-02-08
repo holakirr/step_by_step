@@ -3,7 +3,7 @@ import { Input } from ".";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Components/Input",
+  title: "Components/Inputs/Input",
   component: Input,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
@@ -20,5 +20,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Base: Story = {
-  args: { label: "Test" },
+  args: { label: "Test", placeholder: "Placeholder" },
 };
