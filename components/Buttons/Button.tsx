@@ -1,4 +1,5 @@
 import { ButtonHTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 type ButtonVariant = keyof typeof buttonVariantClasses;
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -28,11 +29,12 @@ const Button = ({
 }: ButtonProps) => (
   <button
     type="button"
-    className={`${
-      buttonVariantClasses[variant]
-    } inline-flex items-center px-3 py-2 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-opacity-70 hover:bg-opacity-50 backdrop-blur-md rounded-3xl transition-colors shadow-md hover:shadow-lg whitespace-nowrap ${
-      className ? className : ""
-    } ${squared ? "aspect-square" : ""}`}
+    className={twMerge(
+      buttonVariantClasses[variant],
+      "inline-flex items-center px-4 py-2 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-opacity-70 hover:bg-opacity-50 backdrop-blur-sm rounded-3xl transition-colors shadow-md hover:shadow-lg whitespace-nowrap",
+      className,
+      squared && "aspect-square"
+    )}
     onClick={onClick}
   >
     {children}

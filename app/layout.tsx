@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 import "./globals.css";
 import Providers from "./providers";
 
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="en">
-    <body className={inter.className + " bg-white dark:bg-slate-700"}>
+    <body className={twMerge(inter.className, "bg-white dark:bg-slate-700")}>
       <Providers>
         <div className="min-h-screen flex flex-col py-2">
           <Nav />

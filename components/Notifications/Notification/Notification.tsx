@@ -10,16 +10,20 @@ export type NotificationType = {
   time: string;
 };
 
-type NotificationsProps = HTMLAttributes<HTMLDivElement> & NotificationType;
+type NotificationsProps = HTMLAttributes<HTMLDivElement> &
+  NotificationType & {
+    index: number;
+  };
 
 export const Notification = ({
   type,
+  index,
   title,
   message,
   time,
 }: NotificationsProps) => (
   <div
-    className={`z-10 p-4 w-80 flex justify-between items-start shadow-xl rounded-lg backdrop:blur-xl relative bg-white/90 dark:bg-slate-700/90`}
+    className="z-10 p-4 w-80 flex justify-between items-start shadow-xl rounded-lg backdrop-blur relative bg-white/70 dark:bg-slate-700/70"
     role="notification"
   >
     <div className="">
