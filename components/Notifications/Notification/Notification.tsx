@@ -23,7 +23,7 @@ export const Notification = ({
 	time,
 }: NotificationsProps) => (
 	<div
-		className="z-10 p-4 w-80 flex justify-between items-start shadow-xl rounded-lg backdrop-blur bg-white/70 dark:bg-slate-700/70"
+		className="z-10 p-4 w-80 flex justify-between items-start shadow-xl rounded-lg backdrop-blur bg-gray-400/30"
 		id="notification"
 	>
 		<div className="">
