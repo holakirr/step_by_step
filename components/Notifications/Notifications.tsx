@@ -10,12 +10,14 @@ type NotificationsProps = {
 export const Notifications = ({ data }: NotificationsProps) => (
 	<div
 		className={twMerge(
-			"fixed bottom-8 grid right-8 z-10",
+			"fixed bottom-8 grid right-8 w-80 z-10",
 			styles.notifications,
 		)}
 	>
-		{data.map((notification, index) => (
-			<Notification key={notification.id} index={index} {...notification} />
-		))}
+		{data
+			.map((notification, index) => (
+				<Notification key={notification.id} index={index} {...notification} />
+			))
+			.reverse()}
 	</div>
 );
