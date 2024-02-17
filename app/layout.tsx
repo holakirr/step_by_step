@@ -1,5 +1,6 @@
-import { Container, Footer, Nav, Notifications } from "@/components";
-import { notificationsMock } from "@/const";
+import { notificationsMock } from "@/constants";
+import { Container } from "@/shared";
+import { Footer, Nav, Notifications } from "@/widgets";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -7,7 +8,7 @@ import { Inter } from "next/font/google";
 import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 import "./globals.css";
-import Providers from "./providers";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
