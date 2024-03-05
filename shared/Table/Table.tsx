@@ -1,9 +1,9 @@
 "use client";
 
-import { ListBox } from "@/shared/Inputs";
-import { SearchBox } from "@/widgets";
 import Image from "next/image";
 import { FC, useState } from "react";
+import { ListBox } from "../";
+import { SearchBox } from "../../widgets";
 
 type TableProps = {
 	// biome-ignore lint/suspicious/noExplicitAny: <explanation>

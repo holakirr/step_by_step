@@ -1,5 +1,5 @@
-import { Container, Divider, Logotype, NavItemsList } from "@/shared";
 import Link from "next/link";
+import { Container, Divider, Logotype, NavItemsList } from "../../shared";
 
 export const Footer = () => (
 	<Container className="mt-auto">

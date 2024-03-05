@@ -1,4 +1,4 @@
-import { Table } from "@/shared";
+import { Table } from "../shared";
 
 const data = [
 	{

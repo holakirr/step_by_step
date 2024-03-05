@@ -1,6 +1,6 @@
-import { Input } from "@/shared";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { InputHTMLAttributes } from "react";
+import { Input } from "../../shared";
 
 type SearchBoxProps = InputHTMLAttributes<HTMLInputElement>;
 

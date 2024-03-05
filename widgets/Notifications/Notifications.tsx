@@ -1,5 +1,5 @@
-import { Notification, NotificationType } from "@/widgets";
 import { twMerge } from "tailwind-merge";
+import { Notification, NotificationType } from "../";
 import styles from "./Notifications.module.sass";
 
 type NotificationsProps = {

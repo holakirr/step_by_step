@@ -1,4 +1,4 @@
-import { NotificationType } from "@/widgets/Notification/Notification";
+import { NotificationType } from "../widgets/Notification/Notification";
 
 export const navItems = [
 	{
